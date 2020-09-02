@@ -7,6 +7,8 @@
     font-size: 14px;
     line-height: 1.625;
     letter-spacing: 0.02em;
+    text-decoration: none;
+    cursor: none;
 }
 
 .container{
@@ -82,16 +84,17 @@
     /*outline: 2px solid tomato;*/
 }
 
-.phone
+.phone,
 .email {
-    font-family: Roboto;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    cursor: none;
-    color: var(--main-text-color);  
+   font-family: Roboto;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 16px;
+   letter-spacing: 0.02em;
+
+   text-decoration: none;
+   cursor: none;
+   color: var(--main-text-color);
 }
 
 .phone{
@@ -104,11 +107,26 @@
     /*outline: 2px solid tomato;*/
 }
 
-.icon-kontakt{
+.email:hover,
+.phone:hover{
+    color: #2196F3;
+}
+
+.box-kontakt{
+    display: flex;
+    margin-right: 0;
+    margin-left: 305px;
+    padding-left:0;
+    align-items: center;
+}
+
+
+.icon.kontakt{
     display: inline-block;
     fill: #757575;
     align-items: center;
 }
+
 
 .box-kontakt.icon-kontakt:hover path{
     fill: #2196F3;
@@ -153,11 +171,13 @@
     padding-top: 188px;
     width: 696px;
     margin-bottom: 30px;
-    white-space: pre-wrap;
+    white-space: wrap;
 
     font-family: Roboto;
     font-weight: 900;
-    line-height: 1.6;
+    font-size: 44px;
+    line-height: 60px;
+    letter-spacing: 0.06em;
     color: #ffffff;
     text-decoration: none;
     text-align: center;
@@ -208,6 +228,9 @@
     font-family: Roboto;
     font-weight: bold;
     line-height: 1.142;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
     letter-spacing: 0.03em;
     color:var(--title-text-color);
     text-decoration: none;
@@ -219,11 +242,13 @@
     margin-top: 0;
     margin-bottom: 0em;
     text-align: start;
+    white-space: wrap;
 
     font-family: Roboto;
     font-weight: normal;
-    line-height: 1.71;
-    letter-spacing: 0.02em;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
     color: var(--main-text-color);
     /*outline: 2px solid tomato;*/
 }
@@ -483,10 +508,10 @@
  /*--FOOTER--*/
 
  .bottom{
+     display: flex;
      padding-top: 60px;
-     padding-left: 214px;
      margin-bottom: 20px;
-     text-align: center;
+     align-content: flex-start;
  }
 
 .akcent{
@@ -497,21 +522,37 @@
     background-color: #2F303A;
 }
 
+.left{
+    display:block;
+    margin-left: 0px;
+    align-content:start;
+    /*outline: 2px solid tomato;*/
+}
+
 .adress {
     text-align: start;
     font-family:Roboto;
     font-weight: normal;
     line-height: 1.7;
     color: #ffffff;
+    list-style: none;
+    text-decoration: none;
+    cursor: none;
 }
 
-.nav-footer-kontakt {
+.nav-footer-kontakt{
     display: block;
-    text-align: start;
+    padding-left: 0;
+    
     font-family: Roboto;
     font-weight: normal;
     line-height: normal;
-    
+    letter-spacing: 0.03em;
+    line-height: 24px;
+    font-style: none;
+    text-decoration: none;
+    list-style: none;
+    cursor: none;
     color: var(--main-text-color);
 }
 
@@ -625,8 +666,11 @@
     display: inline-block;
     margin-right: 30px;
     margin-bottom: 30px;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     /*outline: 2px solid tomato;*/
+}
+
+.portfolio-list:hover{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-item.advantages-item:nth-child(){
@@ -641,7 +685,9 @@
     line-height: 1.5;
     text-align: center;
     color: #ffffff;
-    background: rgba(33, 150, 243, 0.9);
+    background-image: url(../images/img\(13\).jpg);
+    /*background: rgba(33, 150, 243, 0.9);*/
+
 }
 
 .portfolio-title {
